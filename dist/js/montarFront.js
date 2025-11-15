@@ -95,6 +95,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Fazer a busca quando o enter for pressionado
+  
+  elTextBuscar.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      buscarProfissoes();
+    }
+  });
 
     preencherAreas();
   exibirProfissao(profissao);
