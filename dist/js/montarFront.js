@@ -83,6 +83,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // Função para o filtro
+
+  elSelectFiltro.addEventListener("change", function () {
+    const valor = elSelectFiltro.value;
+    if (valor === "todos") {
+      exibirProfissao(profissao);
+    } else {
+      const filtrados = profissao.filter((p) => p.area === valor);
+      exibirProfissao(filtrados);
+    }
+  });
+
+
     preencherAreas();
   exibirProfissao(profissao);
 });
