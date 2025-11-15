@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       elMain.innerHTML += `
        <div class="border border-teal-200 rounded shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl bg-white ">
-        <div class="bg-gradient-to-r from-teal-900 via-teal-600 to-violet-900 m-4 p-4 rounded">
-        <h1 class="text-white text-2xl text-center font-chakra">${p.titulo}</h1>
+          <div class="bg-gradient-to-r from-teal-900 via-teal-600 to-violet-900 m-4 p-4 rounded">
+            <h1 class="text-white text-2xl text-center font-chakra">${p.titulo}</h1>
       </div>
 
             <div class="flex items-center justify-center">
@@ -54,5 +54,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
     
+    
+//Preenche o filtro
+
+  function preencherAreas() {
+    const areas = [...new Set(profissao.map((p) => p.area))].sort();
+      areas.forEach((are) => {
+      const option = document.createElement("option");
+      option.value = are;
+      option.textContent = are;
+      elSelectFiltro.appendChild(option);
+    });
+  }
+
+    preencherAreas();
   exibirProfissao(profissao);
 });
