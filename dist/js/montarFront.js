@@ -66,6 +66,22 @@ document.addEventListener("DOMContentLoaded", function () {
       elSelectFiltro.appendChild(option);
     });
   }
+    
+     // Função para o Buscar
+
+  function buscarProfissoes() {
+    const valorBusca = elTextBuscar.value.toLowerCase().trim();
+
+    if (valorBusca === "") {
+      alert("Preencha o campo. Exibindo todas as profissões.");
+      exibirProfissao(profissao);
+    } else {
+      const encontrados = profissao.filter((p) =>
+        p.titulo.toLowerCase().includes(valorBusca)
+      );
+      exibirProfissao(encontrados);
+    }
+  }
 
     preencherAreas();
   exibirProfissao(profissao);
