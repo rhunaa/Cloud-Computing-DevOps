@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       elMain.innerHTML += `
-       <div class="border border-teal-200 rounded shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl bg-white ">
+       <div class="border border-teal-200 rounded shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl bg-white dark:bg-gray-800">
           <div class="bg-gradient-to-r from-teal-900 via-teal-600 to-violet-900 m-4 p-4 rounded">
             <h1 class="text-white text-2xl text-center font-chakra">${p.titulo}</h1>
       </div>
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
     
     
-//Preenche o filtro
+   //Preenche o filtro
 
   function preencherAreas() {
     const areas = [...new Set(profissao.map((p) => p.area))].sort();
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Função para o filtro
+    // Função para o filtro
 
   elSelectFiltro.addEventListener("change", function () {
     const valor = elSelectFiltro.value;
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Fazer a busca quando o enter for pressionado
+    // Fazer a busca quando o enter for pressionado
   
   elTextBuscar.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
