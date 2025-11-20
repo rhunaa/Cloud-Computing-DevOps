@@ -5,7 +5,7 @@ Global Solution — Cloud Computing & DevOps
 ## Integrantes
 
   Bruna Pereira Cordeiro — RM: 563153
-  Lucas Simões da Silva — RM: 561436 
+  Lucas Simões Silva — RM: 561436 
   Milena Beck Speria — RM: 565077
   Isabella Siqueira — RM: 563973
 
@@ -33,10 +33,10 @@ O ambiente utiliza:
 ## Estrutura do Repositório
 
 /
-|-- app/      # Arquivos da SPA (HTML, CSS, JS)
-|-- ops/      # Dockerfile e docker-compose.yml
-|-- db/       # schema.sql e seed.sql
-|-- README.md # Documentação principal
+|-- app/       # Arquivos da SPA (HTML, CSS, JS)
+|-- ops/       # Dockerfile e docker-compose.yml
+|-- db/        # schema.sql e seed.sql
+|-- README.md  # Documentação principal
 
 
 ## Descrição da Solução
@@ -237,7 +237,7 @@ MySQL (Container DB): armazena dados das carreiras de IA e executa consultas.
                            │ 8080
                            ▼
           ┌────────────────────────────────────────┐
-          │        Docker Compose  (Bridge)         │
+          │        Docker Compose  (Bridge)        │
           └───────────┬────────────────────────────┘
                       │
         ┌─────────────┴──────────────┐
@@ -253,8 +253,11 @@ MySQL (Container DB): armazena dados das carreiras de IA e executa consultas.
 
 ## Vídeo no YouTube
 
+https://youtu.be/hZTnwQynAOc?si=nygGpEQLCq77mZxK
 
+## Github
 
+https://github.com/rhunaa/Cloud-Computing-DevOps
 
 ## Conclusão
 
